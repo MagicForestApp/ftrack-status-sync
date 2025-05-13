@@ -29,7 +29,7 @@ def main():
         api_key='NTVjM2I1YTgtYjU3Mi00YWM2LThhNWItZDc2MjUwNjhiMGE5Ojo1MjJkNTQxYy05NWM1LTRhMjAtODVhNy1hYzYyNzY1MTJjMWU',
         api_user='second8prize@gmail.com'
     )
-    session.event_hub.subscribe('ftrack.update', update_task_status)
+    session.event_hub.subscribe('topic=entity.update', update_task_status)
     print('Listening to Ftrack...')
     session.event_hub.wait()
 
