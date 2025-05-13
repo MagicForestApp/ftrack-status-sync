@@ -25,9 +25,9 @@ def update_task_status(event):
 
 def main():
     session = ftrack_api.Session(
-        server_url='https://yourstudio.ftrackapp.com',
+        server_url='https://secondprize.ftrackapp.com',
         api_key='NTVjM2I1YTgtYjU3Mi00YWM2LThhNWItZDc2MjUwNjhiMGE5Ojo1MjJkNTQxYy05NWM1LTRhMjAtODVhNy1hYzYyNzY1MTJjMWU',
-        api_user='example@example.com'
+        api_user='second8prize@gmail.com'
     )
     session.event_hub.subscribe('ftrack.update', update_task_status)
     print('Listening to Ftrack...')
